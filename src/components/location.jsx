@@ -47,10 +47,10 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
-    "mapWidth" : "640",
-    "mapHeight" : "360"
+   "timestamp" : "1737870685327",
+		"key" : "2mvtg",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
   }).render();`);
     scriptTag.appendChild(inlineScript);
     document.body.appendChild(scriptTag);
@@ -99,27 +99,31 @@ const Location = () => {
       </Divider>
       <Image src={Flower} />
       <Map
-        id="daumRoughmapContainer1652464367301"
-        className="root_daum_roughmap root_daum_roughmap_landing"
+        id='daumRoughmapContainer1737870685327'
+        className='root_daum_roughmap root_daum_roughmap_landing'
       ></Map>
       <Content>
-        대구 수성구 두산동 888-2번지
+        서울 광진구 광나루로56길 85
         <br />
-        호텔수성 수성스퀘어 3층 피오니홀
+        강변테크노마트 3층 루시드홀
         <br />
         <br />
         <Title>버스 이용시</Title>
         <br />
         <br />
-        410-1, 401 호텔수성 앞 하차
-        <br />
-        수성1-1, 수성3-1, 814 TBC방송국 앞 하차
+        테크노마트 앞, 강변역 정류장 하차
         <br />
         <br />
         <Title>지하철 이용시</Title>
         <br />
         <br />
-        3호선 수성못역 하차 (도보 10분)
+        2호선 강변역 1번 출구(도보 5분)
+        <br />
+        <br />
+        <Title>자가용 이용시</Title>
+        <br />
+        <br />
+        강변테크노마트 지하 3,4층 주차장 이용
       </Content>
     </Wrapper>
   );
