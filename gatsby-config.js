@@ -6,20 +6,22 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components",
     {
-      resolve: "gatsby-plugin-favicons",
+      resolve: "gatsby-plugin-manifest",
       options: {
-        logo: "./src/images/favicon.ico",
-        appName: "weddingInvitation",
-        background: "#fff",
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          yandex: false,
-          windows: true,
-        },
+        name: "weddingInvitation",
+        short_name: "Wedding",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#ffffff",
+        display: "standalone",
+        icon: "src/images/favicon.png", 
+        icons: [
+          {
+            src: "src/images/favicon.png",
+            sizes: "48x48",
+            type: "image/png",
+          },
+        ],
       },
     },
   ],
