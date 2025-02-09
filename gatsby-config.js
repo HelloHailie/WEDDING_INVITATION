@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: `/WEDDING_INVITATION`,
   siteMetadata: {
     title: `weddingInvitation`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://hellohailie.github.io`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
